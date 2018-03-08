@@ -1,0 +1,455 @@
+@font-face {
+    font-family: Adamas-Regular;
+    src: url("../fonts/Adamas-Regular.otf");
+}
+
+@font-face {
+    font-family: Exo2-Regular;
+    src: url("../fonts/Exo2-Regular.otf");
+}
+
+@font-face {
+    font-family: Static;
+    src: url("../fonts/Static.otf");
+}
+
+@font-face {
+    font-family: PT_Sans-Web-Regular;
+    src: url("../fonts/PT_Sans-Web-Regular.ttf");
+}
+
+
+html {
+    font-family: PT_Sans-Web-Regular, sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+h1 {
+    font-family: Static, sans-serif;
+    color: slategray;
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-family: Static, sans-serif;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.font-white {
+    color: #EFEBEA;
+    border-bottom: 1px solid #EFEBEA;
+
+}
+
+.font-blue {
+    color: #3a6186;
+    border-bottom: 1px solid #3a6186;
+}
+
+.container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Header - Menu */
+.header-box {
+    background-image: url("../img/wallpaper3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.stamp {
+    font-family: Static, sans-serif;
+    padding: 20px 0 0 20px;
+    color: #FCF9F2;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.menu {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    z-index: 99999;
+}
+
+.menu:hover {
+    transform: scale(1.2);
+
+    transition: all 0.5s 0.2s;
+}
+
+.menu .fa {
+    font-size: 2.2rem;
+    color: #FCF9F2;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.burger-nav {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0006;
+    z-index: 9999;
+}
+
+.burger-nav a {
+    font-family: Static, sans-serif;
+    color: #FCF9F2;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 2.4rem;
+}
+
+.burger-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.burger-nav li {
+    padding: 5px 0;
+}
+
+.stone {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+}
+
+.stone {
+    animation-duration: 8s;
+    -webkit-animation-name: fly;
+    -moz-animation-name: fly;
+    -o-animation-name: fly;
+    animation-name: fly;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 0.2s;
+
+}
+
+@keyframes fly {
+    0% {
+         transform: scale(1);
+    }
+
+    50% {
+        transform: translate(0px, -20px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+/* FIN ** - Header - Menu ** FIN */
+
+
+/* List des sites réalisés (Makings) */
+
+#makings {
+    padding: 60px 0;
+}
+
+.makings {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.making-box {
+    position: relative;
+    width: 550px;
+    height: 350px;
+    margin-bottom: 50px;
+}
+
+.making-img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    border: 5px solid #3a6186;
+}
+
+.making-div-front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.making-div-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.making-name {
+    font-family: Exo2-Regular, sans-serif;
+    background-color: #3a6186;
+    color: #FCF9F2;
+    padding: 5px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.making-languages {
+    font-family: Exo2-Regular, sans-serif;
+    background-color: #3a6186;
+    color: #FCF9F2;
+    padding: 5px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.making-created {
+    font-family: Exo2-Regular, sans-serif;
+    background-color: #3a6186;
+    color: #FCF9F2;
+    padding: 5px;
+}
+
+.making-desc {
+    width: 90%;
+    font-family: Exo2-Regular, sans-serif;
+    background-color: #3a6186;
+    color: #FCF9F2;
+    padding: 5px;
+    text-align: center;
+}
+
+.making-link {
+    font-family: Exo2-Regular, sans-serif;
+    font-size: 1.1rem;
+    background-color: #d0c0cb;
+    color: #3A6186;
+    padding: 5px;
+    border: 1px solid #3a6186;
+}
+
+.making-link:hover {
+    text-decoration: none;
+    color: #FCF9F2;
+}
+
+.hide {
+    opacity: 0;
+}
+
+
+
+
+/* Formulaire de contact (bootstrap) */
+
+/*Contact sectiom*/
+
+#contact{
+
+    font-family: Static, sans-serif;
+    padding: 60px 0;
+    width: 100%;
+    width: 100vw;
+    height: 550px;
+    background: #3a6186;
+    color: #EFEBEA;
+}
+
+.contact-section{
+    padding-top: 40px;
+}
+
+.contact-section .col-md-6{
+    width: 50%;
+}
+
+.form-line{
+    border-right: 1px solid #EFEBEA;
+}
+
+.form-group{
+    margin-top: 10px;
+}
+
+label{
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: normal;
+}
+
+.form-control{
+    font-size: 1.3em;
+    color: #080808;
+}
+
+textarea.form-control {
+    height: 130px;
+}
+
+.submit{
+    font-size: 1.1em;
+    float: right;
+    width: 150px;
+    background-color: transparent;
+    color: #fff;
+
+}
+
+/* FIN ** Fin formulaire de contact (bootstrap)** FIN */
+
+/* DEBUT ** PAGE ADMIN */
+
+/* Debut tableau récapitulatif des réalisations (makings) */
+
+.summary {
+    position: relative;
+    max-width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    color: slategray;
+}
+
+.summary-caption {
+    font-family: Static, sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, slategrey, white);
+}
+
+.summary td, th {
+    border: thin solid slategrey;
+    padding: 5px;
+}
+
+.summary th {
+    color: white;
+    background-color: slategrey;
+}
+
+.summary-img {
+    max-width: 100%;
+}
+
+.summary-button {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+/* Formulaire ajout de contenu */
+
+#addMaking-button {
+    position: absolute;
+    top: -8px;
+    right: 0px;
+    padding: 20px;
+    color: white;
+    background-color: slategray;
+    font-weight: bold;
+}
+
+#addMaking-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.addMaking-form {
+    position: relative;
+    width: 50%;
+    text-align: justify;
+    color: white;
+    background-color: slategray;
+    padding: 20px;
+}
+
+.addMaking-caption {
+    font-family: Static, sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.addMaking-form td {
+    padding: 5px 0;
+}
+
+.addMaking-form table {
+    width: 100%;
+}
+
+.addMaking-form input {
+    width: 100%;
+}
+
+.addMaking-td-submit {
+    text-align: center;
+}
+
+.addMaking-td-submit input{
+    width: 30%;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+#addMaking-form-close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    text-decoration: none;
+    color: slategray;
+    font-size: 20px;
+}
+
+.hide {
+    display: none;
+    z-index: -9999;
+}
+
+.error {
+    background-color: rgb(255, 169, 172);
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Moxone Admin</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/class/AddMakings.class.js"></script>
+    <script src="js/class/Xhr.class.js"></script>
+
+</head>
+<body>
+    <section class="container overflow">
+        <h1>Page d'administration</h1>
+        <table class="summary">
+            <caption class="summary-caption">Liste des projets :<button id="addMaking-button">Ajouter</button>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nom</th>
+                    <th>Date de création</th>
+                    <th>Description</th>
+                    <th>Lien</th>
+                    <th>Languages</th>
+                    <th>Image</th>
+                    <th>Modifier</th>
+                    <th>Supprimer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($makings as $making) : ?>
+                    <tr>
+                        <td><?= htmlspecialchars($making["Id"]) ?></td>
+                        <td><?= htmlspecialchars($making["Name"]) ?></td>
+                        <td><?= htmlspecialchars($making["Created"]) ?></td>
+                        <td><?= htmlspecialchars($making["Description"]) ?></td>
+                        <td><a href="<?= htmlspecialchars($making["Link"]) ?>"><?= htmlspecialchars($making["Link"]) ?></a></td>
+                        <td><?= htmlspecialchars($making["Languages"]) ?></td>
+                        <td><img class="summary-img" src="./img/<?= htmlspecialchars($making["Image"]) ?>" alt="<?= htmlspecialchars($making["Image"]) ?>"</td>
+                        <td><button id="editMaking" class="summary-button" data-id="<?= htmlspecialchars($making["Id"]) ?>"><i class="fas fa-edit"></i></button></td>
+                        <td><button id="delMaking" class="summary-button" data-id="<?= htmlspecialchars($making["Id"]) ?>"><i class="fas fa-trash-alt"></i></button></td>
+                    </tr>
+                <?php endforeach ?>
+            </tbody>
+        </table>
+        <div id="addMaking-box" class="hide">
+            <form enctype="multipart/form-data" method="post" class="addMaking-form">
+                <table>
+                    <caption class="addMaking-caption">Ajouter un élément</caption>
+                        <tbody>
+                            <tr id="addMaking-error" class="error hide">
+                                <td>Erreur : formulaire incomplet <span></span></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Name">Nom :</label></td>
+                                <td><input type="text" id="Name" name="name" placeholder="Nom du site"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Created">Date de création :</label></td>
+                                <td><input  type="date" id="Created" name="Created"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Description">Description :</label></td>
+                                <td><input type="text" id="Description" name="Description" placeholder="Description du site"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Link">Adresse du site :</label></td>
+                                <td><input type="url" id="Link" name="Link" placeholder="http://..."></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Languages">Langages utilisés :</label></td>
+                                <td><input type="text" id="Languages" name="Languages" placeholder="Html - CSS - Javascript ...."></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Image">Image (.jpeg, .jpg, .png) : </label></td>
+                                <td><input type="file" id="Image" name="Image" accept=".jpg, .jpeg, .png"/></td>
+                            </tr>
+                            <tr>
+                                <td class="addMaking-td-submit" colspan="2"><input id="addMaking-form-submit" type="submit" value="Valider" title="Valider l'ajout d'un post"></td>
+                            </tr>
+                        </tbody>
+                    <a href="#" id="addMaking-form-close"><i class="fas fa-times-circle"></i></a>
+                </table>
+            </form>
+        </div>
+    </section>
+    <script src="js/admin.js"></script>
+</body>
+</html>

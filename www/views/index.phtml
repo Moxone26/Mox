@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Moxone</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script rel="stylesheet" src="js/class/Nav.class.js"></script>
+    <script rel="stylesheet" src="js/class/Makings.class.js"></script>
+
+</head>
+<body>
+    <header class="header-box">
+        <div class="stamp">
+            <strong>Maxime Orengo</strong>
+        </div>
+        <div class="menu">
+            <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+        <nav class="burger-nav" style="display: none;">
+            <ul>
+                <li><a href="#makings">Créations</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <img class="stone" src="img/stone.png" alt="saltstone">
+    </header>
+    <main>
+        <section id="makings" class="container">
+            <h3 class="font-blue">Créations</h3>
+            <div class="makings">
+                <?php foreach($makings as $making) : ?>
+                    <article id="making-<?= htmlspecialchars($making["Id"]) ?>" class="making-box">
+                        <img class="making-img" src="./img/<?= htmlspecialchars($making["Image"]) ?>" alt="<?= htmlspecialchars($making["Image"]) ?>">
+                            <div class="making-div-front">
+                                <h4 class="making-name"><?= htmlspecialchars($making["Name"]) ?></h4>
+                                <p class="making-languages"><?= htmlspecialchars($making["Languages"]) ?></p>
+                            </div>
+                            <div class="making-div-back hide">
+                                <p class="making-created">Créé le <?= htmlspecialchars(date_format(new Datetime($making['Created']), 'd/m/Y')) ?></p>
+                                <p class="making-desc"><?= htmlspecialchars($making["Description"]) ?></p>
+                                <a class= "making-link" href="<?= htmlspecialchars($making["Link"]) ?>" target="_blank">Visiter</a>
+                            </div>
+                    </article>
+            <?php endforeach ?>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-section">
+                <div class="container">
+                    <h3 class="font-white">Contact</h3>
+                    <form>
+                        <div class="col-md-6 form-line">
+                            <div class="form-group">
+                                <label for="firstname">Prenom</label>
+                                <input type="text" class="form-control" id="firstname" placeholder=" Prénom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Nom</label>
+                                <input type="text" class="form-control" id="lastname" placeholder=" Nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder=" Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" class="form-control" id="phone" placeholder=" Téléphone">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <input type="text" class="form-control" id="subject" placeholder=" Sujet">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" placeholder=" Message" required></textarea>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Envoyer</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
