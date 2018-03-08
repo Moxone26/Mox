@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7227aca-fced-46d9-bd1f-d76fb3048954" name="Default" comment="" />
+    <list default="true" id="c7227aca-fced-46d9-bd1f-d76fb3048954" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/class/DeleteMakings.class.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="mox.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -29,16 +33,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MakingsModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MakingsModel.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,11 +87,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddMakings.class.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddMakings.class.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/class/AddMakings.class.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
               <caret line="14" column="111" selection-start-line="14" selection-start-column="111" selection-end-line="14" selection-end-column="111" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteMakings.class.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/class/DeleteMakings.class.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -143,6 +147,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -178,6 +185,7 @@
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/js/admin.js" />
         <option value="$PROJECT_DIR$/www/js/class/AddMakings.class.js" />
+        <option value="$PROJECT_DIR$/www/js/class/DeleteMakings.class.js" />
       </list>
     </option>
   </component>
@@ -241,7 +249,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -482,15 +490,15 @@
       <workItem from="1519988087738" duration="849000" />
       <workItem from="1520186035297" duration="8625000" />
       <workItem from="1520329609948" duration="12380000" />
-      <workItem from="1520415852621" duration="8980000" />
+      <workItem from="1520415852621" duration="9174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189828000" />
+    <option name="totallyTimeSpent" value="190022000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1934" height="1047" extended-state="1" />
+    <frame x="-7" y="0" width="1934" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12721585" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -528,14 +536,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/views/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="768">
@@ -816,6 +816,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" column="111" selection-start-line="14" selection-start-column="111" selection-end-line="14" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/class/DeleteMakings.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
