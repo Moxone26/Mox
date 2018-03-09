@@ -23,18 +23,24 @@ class Database
 
     // Methodes
 
-    public function query($sql, $params = []){
+    public function query($sql, $params = [])
+    {
         $query = $this->pdo->prepare($sql);
         $query->execute($params);
         return $query->fetchAll();
     }
 
-    public function insertInto($sql, $params = []){
+    public function insertInto($sql, $params = [])
+    {
         $insertInto = $this->pdo->prepare($sql);
         $insertInto->execute($params);
     }
 
-
+    public function delete($sql, $params = [])
+    {
+        $delete = $this->pdo->prepare($sql);
+        $delete->execute($params);
+    }
 
 
 }

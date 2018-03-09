@@ -18,7 +18,8 @@ class MakingsModel
 
     // Methodes
 
-    public function getMakings() {
+    public function getMakings()
+    {
         $sql = 'SELECT *
                 FROM makings
                 ORDER BY Id DESC';
@@ -26,7 +27,8 @@ class MakingsModel
         return $makings;
     }
 
-    public function addMakings() {
+    public function addMakings()
+    {
         $sql = 'INSERT INTO Makings (Name, Created, Description, Link, Languages, Image)
                 VALUES (:Name, :Created, :Description, :Link, :Languages, :Image)';
         $params = array(
@@ -38,6 +40,16 @@ class MakingsModel
                 "Image" => $_POST["Image"]
         );
         $this->db->insertInto($sql, $params);
+    }
+
+    public function  deleteMaking()
+    {
+        $sql = 'DELETE *
+                FROM makings
+                WHERE Id = ?';
+
+        $params = array($_POST['Id']);
+        $this->db->delete($sql, $params);
     }
 }
 

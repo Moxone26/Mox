@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/class/AddMakings.class.js"></script>
+    <script src="js/class/DeleteMakings.class.js"></script>
     <script src="js/class/Xhr.class.js"></script>
 
 </head>
@@ -39,8 +40,8 @@
                         <td><a href="<?= htmlspecialchars($making["Link"]) ?>"><?= htmlspecialchars($making["Link"]) ?></a></td>
                         <td><?= htmlspecialchars($making["Languages"]) ?></td>
                         <td><img class="summary-img" src="./img/<?= htmlspecialchars($making["Image"]) ?>" alt="<?= htmlspecialchars($making["Image"]) ?>"</td>
-                        <td><button id="editMaking" class="summary-button" data-id="<?= htmlspecialchars($making["Id"]) ?>"><i class="fas fa-edit"></i></button></td>
-                        <td><button id="delMaking" class="summary-button" data-id="<?= htmlspecialchars($making["Id"]) ?>"><i class="fas fa-trash-alt"></i></button></td>
+                        <td><button class="editMaking summary-button" data-id="<?= htmlspecialchars($making["Id"]) ?>"><i class="fas fa-edit"></i></button></td>
+                        <td><button class="deleteMaking summary-button" data-id="<?= htmlspecialchars($making["Id"]) ?>"><i class="fas fa-trash-alt"></i></button></td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
