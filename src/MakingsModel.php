@@ -44,7 +44,7 @@ class MakingsModel
 
     public function  deleteMaking()
     {
-        $sql = 'DELETE *
+        $sql = 'DELETE
                 FROM makings
                 WHERE Id = ?';
 

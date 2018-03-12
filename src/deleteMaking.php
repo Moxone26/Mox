@@ -11,9 +11,9 @@ include __DIR__ . "../../src/MakingsModel.php";
 // Code principals
 
 // Instanciation de MakingModel
-//$makingsModel = new MakingsModel();
+$makingsModel = new MakingsModel();
 
 //Suppressuib d'un nouveau contenu
-//$makingsModel->deleteMaking();
+$makingsModel->deleteMaking();
 
 var_dump($_POST);

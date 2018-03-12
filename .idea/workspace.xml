@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7227aca-fced-46d9-bd1f-d76fb3048954" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MakingsModel.php" afterPath="$PROJECT_DIR$/src/MakingsModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/deleteMaking.php" afterPath="$PROJECT_DIR$/src/deleteMaking.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/class/DeleteMakings.class.js" afterPath="$PROJECT_DIR$/www/js/class/DeleteMakings.class.js" />
     </list>
     <ignored path="mox.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,15 +32,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MakingsModel.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MakingsModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MakingsModel.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="590">
               <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
               <folding>
-                <marker date="1520591374456" expanded="true" signature="367:437" placeholder="Select * FRO... makings" />
-                <marker date="1520591374456" expanded="true" signature="570:642" placeholder="INSERT INTO Makings... " />
-                <marker date="1520591374456" expanded="true" signature="570:724" placeholder="INSERT INTO Makings... " />
+                <marker date="1520896477118" expanded="true" signature="367:437" placeholder="Select * FRO... makings" />
+                <marker date="1520896477118" expanded="true" signature="570:642" placeholder="INSERT INTO Makings... " />
+                <marker date="1520896477118" expanded="true" signature="570:724" placeholder="INSERT INTO Makings... " />
+                <marker date="1520896477118" expanded="true" signature="1157:1221" placeholder="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -106,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deleteMaking.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="deleteMaking.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/deleteMaking.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -179,12 +180,12 @@
         <option value="$PROJECT_DIR$/src/addMaking.php" />
         <option value="$PROJECT_DIR$/www/views/index.phtml" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
-        <option value="$PROJECT_DIR$/src/MakingsModel.php" />
         <option value="$PROJECT_DIR$/src/Database.php" />
         <option value="$PROJECT_DIR$/www/views/admin.phtml" />
         <option value="$PROJECT_DIR$/www/js/admin.js" />
         <option value="$PROJECT_DIR$/www/js/class/AddMakings.class.js" />
         <option value="$PROJECT_DIR$/www/js/class/DeleteMakings.class.js" />
+        <option value="$PROJECT_DIR$/src/MakingsModel.php" />
         <option value="$PROJECT_DIR$/src/deleteMaking.php" />
       </list>
     </option>
@@ -491,12 +492,12 @@
       <workItem from="1520186035297" duration="8625000" />
       <workItem from="1520329609948" duration="12380000" />
       <workItem from="1520415852621" duration="12224000" />
-      <workItem from="1520860370491" duration="12335000" />
+      <workItem from="1520860370491" duration="13079000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205407000" />
+    <option name="totallyTimeSpent" value="206151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1934" height="1047" extended-state="0" />
@@ -808,23 +809,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/deleteMaking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MakingsModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="590">
           <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
           <folding>
-            <marker date="1520591374456" expanded="true" signature="367:437" placeholder="Select * FRO... makings" />
-            <marker date="1520591374456" expanded="true" signature="570:642" placeholder="INSERT INTO Makings... " />
-            <marker date="1520591374456" expanded="true" signature="570:724" placeholder="INSERT INTO Makings... " />
+            <marker date="1520896477118" expanded="true" signature="367:437" placeholder="Select * FRO... makings" />
+            <marker date="1520896477118" expanded="true" signature="570:642" placeholder="INSERT INTO Makings... " />
+            <marker date="1520896477118" expanded="true" signature="570:724" placeholder="INSERT INTO Makings... " />
+            <marker date="1520896477118" expanded="true" signature="1157:1221" placeholder="DELETE FROM " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/deleteMaking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
