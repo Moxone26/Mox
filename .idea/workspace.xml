@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7227aca-fced-46d9-bd1f-d76fb3048954" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/class/DeleteMakings.class.js" afterPath="$PROJECT_DIR$/www/js/class/DeleteMakings.class.js" />
     </list>
     <ignored path="mox.iws" />
@@ -98,8 +99,8 @@
       <file leaf-file-name="DeleteMakings.class.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/class/DeleteMakings.class.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -490,12 +491,12 @@
       <workItem from="1520186035297" duration="8625000" />
       <workItem from="1520329609948" duration="12380000" />
       <workItem from="1520415852621" duration="12224000" />
-      <workItem from="1520860370491" duration="10552000" />
+      <workItem from="1520860370491" duration="11052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203624000" />
+    <option name="totallyTimeSpent" value="204124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1934" height="1047" extended-state="0" />
@@ -818,8 +819,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/class/DeleteMakings.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="480">
+          <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
           <folding />
         </state>
       </provider>
