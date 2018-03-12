@@ -11,14 +11,13 @@ var DeleteMakings = function()
 //Méthodes
 
 DeleteMakings.prototype.onClickGetDeleteMakingId = function() {
-    //var idToDelete = null;
     // Redefinition de  this.deleteButtons en Array (Nodelist de base) (pour compatibilité avec IE)
     this.deleteButtons = Array.from(this.deleteButtons);
     // Installation d'un event Listener sur chaque bouton supprimé
     for(var i = 0; i < this.deleteButtons.length; i++)
     {
         // Evenement au clic qui renvoi l'id de la ligne à supprimer à sendData (AJAJ)
-        addEventListener("click", deleteLine)
+        addEventListener("click", deleteLine.bind(this));
     }
 
     function deleteLine(event)
@@ -26,7 +25,7 @@ DeleteMakings.prototype.onClickGetDeleteMakingId = function() {
         // Stockage de l'id
         this.idToDelete = event.target.dataset.id;
         // Appel à la fonction sendData avec le callback en argument
-        DeleteMakings.prototype.sendData(DeleteMakings.prototype.onDeleteMakingPhpGetAnswer);
+        this.sendData(this.onDeleteMakingPhpGetAnswer);
         console.log(this.idToDelete);
         console.log(this);
     }
