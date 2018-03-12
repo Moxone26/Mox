@@ -2,7 +2,8 @@
 
 // Constructeur
 
-var AddMakings = function(){
+var AddMakings = function()
+{
     this.addButton = document.querySelector("#addMaking-button"); // Bouton d'ajout de données (ouvre le formulaire)
     this.hideButton = document.querySelector("#addMaking-form-close"); // Bouton de fermeture (ferme le formulaire)
     this.addMakingBox = document.querySelector("#addMaking-box"); // Le wrapper du formulaire
@@ -23,7 +24,7 @@ var AddMakings = function(){
         "image" : true
     };
     this.errorMessage = document.querySelector('#addMaking-error'); // div contenant le message d'erreur
-    this.xhr = new Xhr; // Composition vie appel à la classe Xhr (Xhr.class.js)
+    this.xhr = new Xhr; // Composition avec appel à la classe Xhr (Xhr.class.js)
 };
 
 // Methodes
@@ -179,7 +180,8 @@ AddMakings.prototype.onBlurCheckInput = function ()
 AddMakings.prototype.onClickSubmitAddMakingForm = function()
 {
     // Ajout du evenement au click qui recupere le contenu des inputs et le stock dans l'object "newMaking"
-    this.submitButton.addEventListener("click", function(event){
+    this.submitButton.addEventListener("click", function(event)
+    {
         event.preventDefault();
         // Verifié si les inputs sont correctements renseignés
         var checkError = this.onBlurCheckInput();
