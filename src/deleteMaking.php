@@ -10,10 +10,10 @@ include __DIR__ . "../../src/MakingsModel.php";
 
 // Code principals
 
-// Récupération des données envoyées via xmlHttpRequest
-$_POST = $_POST["Id"];
+// Instanciation de MakingModel
+//$makingsModel = new MakingsModel();
 
-// Décodage du Json en tableau associatif (true)
-$_POST = json_decode($_POST, true);
+//Suppressuib d'un nouveau contenu
+//$makingsModel->deleteMaking();
 
 var_dump($_POST);
