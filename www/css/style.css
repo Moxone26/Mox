@@ -171,9 +171,10 @@ h3 {
 }
 
 #alert {
-    background-color: #761c19;
+    background-color: #ff761f;
     color: white;
     text-align: center;
+    font-weight: bolder;
 }
 
 .makings {
