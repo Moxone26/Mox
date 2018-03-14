@@ -10,10 +10,18 @@ include __DIR__ . "../../src/MakingsModel.php";
 
 // Code principals
 
-// Instanciation de MakingModel
-$makingsModel = new MakingsModel();
+try {
+    // Instanciation de MakingModel
+    $makingsModel = new MakingsModel();
 
-//Suppressuib d'un nouveau contenu
-$makingsModel->deleteMaking();
+    //Suppression d'un nouveau contenu
+    $makingsModel->deleteMaking();
 
-var_dump($_POST);
+    echo "Contenu supprimé";
+}
+
+catch (Exception $e){
+
+    echo 'Erreur : ' . $e->getMessage();
+}
+

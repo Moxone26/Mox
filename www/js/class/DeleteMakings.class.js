@@ -30,7 +30,7 @@ DeleteMakings.prototype.onClickGetDeleteMakingId = function() {
 
 };
 
-DeleteMakings.prototype.sendData = function()
+DeleteMakings.prototype.sendData = function(callback)
 {
     // Appel à xhr (via le constructeur)
     var xhr = this.xhr.getXMLHttpRequest();
@@ -43,10 +43,17 @@ DeleteMakings.prototype.sendData = function()
     // Envoi de l'object data avec la méthode send
     xhr.send(data);
 
+    // Au changement d'état de l'envoi selon conditions on appel le callback (onAddMakingPhpGetAnswer)
+    xhr.onreadystatechange = function() {
+
+        if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+            callback(xhr.responseText);
+        }
+    }
 };
 
 DeleteMakings.prototype.onDeleteMakingPhpGetAnswer = function(answer)
 {
     // A renseigner !!!! ------------------------------------------- >
-    alert(answer);
+    console.log(answer);
 };
