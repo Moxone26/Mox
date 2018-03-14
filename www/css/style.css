@@ -170,6 +170,12 @@ h3 {
     padding: 60px 0;
 }
 
+#alert {
+    background-color: #761c19;
+    color: white;
+    text-align: center;
+}
+
 .makings {
     display: flex;
     justify-content: space-between;

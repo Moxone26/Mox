@@ -54,6 +54,6 @@ DeleteMakings.prototype.sendData = function(callback)
 
 DeleteMakings.prototype.onDeleteMakingPhpGetAnswer = function(answer)
 {
-    // A renseigner !!!! ------------------------------------------- >
-    console.log(answer);
+    document.getElementById("alert").innerHTML =  "<td colspan='9'>" + answer + "</td>";
+
 };
