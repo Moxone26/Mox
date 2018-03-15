@@ -33,7 +33,7 @@
             </thead>
             <tbody>
                 <?php foreach ($makings as $making) : ?>
-                    <tr>
+                    <tr data-rawId="<?= htmlspecialchars($making["Id"]) ?>">
                         <td><?= htmlspecialchars($making["Id"]) ?></td>
                         <td><?= htmlspecialchars($making["Name"]) ?></td>
                         <td><?= htmlspecialchars($making["Created"]) ?></td>
@@ -53,7 +53,7 @@
                     <caption class="addMaking-caption">Ajouter un élément</caption>
                         <tbody>
                             <tr id="addMaking-error" class="error hide">
-                                <td>Erreur : formulaire incomplet <span></span></td>
+                                <td>Erreur : formulaire incomplet</td>
                             </tr>
                             <tr>
                                 <td><label for="Name">Nom :</label></td>

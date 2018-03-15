@@ -38,6 +38,7 @@ DeleteMakings.prototype.sendData = function(callback)
     var data = new FormData();
     // Stockage de l'id de la ligne correspondante à supprimer -> passage en Json
     data.append("Id", this.idToDelete);
+    console.log(this.idToDelete);
     // Appel de la méthode open(), en POST vers la page php de reception, async en true
     xhr.open("POST", "../src/deleteMaking.php", true);
     // Envoi de l'object data avec la méthode send
@@ -54,6 +55,7 @@ DeleteMakings.prototype.sendData = function(callback)
 
 DeleteMakings.prototype.onDeleteMakingPhpGetAnswer = function(answer)
 {
-    document.getElementById("alert").innerHTML =  "<td colspan='9'>" + answer + "</td>";
-
+    document.getElementById("alert").innerHTML =  "<td colspan='9'> Projet avec l'Id " + answer + " supprimé</td>";
+    var lineToDelete = document.querySelector('[data-rawId="' + answer +  '"]');
+    lineToDelete.parentNode.removeChild(lineToDelete);
 };
