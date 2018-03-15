@@ -11,13 +11,15 @@ include __DIR__ . "../../src/MakingsModel.php";
 // Code principals
 
 try {
-    // Instanciation de MakingModel
-    $makingsModel = new MakingsModel();
+    if ($_POST["Id"] > 0){
+        // Instanciation de MakingModel
+        $makingsModel = new MakingsModel();
 
-    //Suppression d'un nouveau contenu
-    $makingsModel->deleteMaking();
+        //Suppression d'un nouveau contenu
+        $makingsModel->deleteMaking();
 
-    echo "Contenu supprimé";
+        echo $_POST["Id"];
+    }
 }
 
 catch (Exception $e){
