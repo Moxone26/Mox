@@ -27,6 +27,15 @@ class MakingsModel
         return $makings;
     }
 
+    public function getLastMakings()
+    {
+        $sql = 'SELECT * 
+                FROM `makings` 
+                ORDER BY Id DESC LIMIT 1 ';
+        $makings = $this->db->query($sql);
+        return $makings;
+    }
+
     public function addMakings()
     {
         $sql = 'INSERT INTO Makings (Name, Created, Description, Link, Languages, Image)

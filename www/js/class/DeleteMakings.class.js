@@ -10,7 +10,7 @@ var DeleteMakings = function()
 
 //Méthodes
 
-DeleteMakings.prototype.onClickGetDeleteMakingId = function() {
+DeleteMakings.prototype.onClickDeleteMaking = function() {
     // Redefinition de  this.deleteButtons en Array (Nodelist de base) (pour compatibilité avec IE)
     this.deleteButtons = Array.from(this.deleteButtons);
     // Installation d'un event Listener sur chaque bouton supprimé
@@ -38,7 +38,6 @@ DeleteMakings.prototype.sendData = function(callback)
     var data = new FormData();
     // Stockage de l'id de la ligne correspondante à supprimer -> passage en Json
     data.append("Id", this.idToDelete);
-    console.log(this.idToDelete);
     // Appel de la méthode open(), en POST vers la page php de reception, async en true
     xhr.open("POST", "../src/deleteMaking.php", true);
     // Envoi de l'object data avec la méthode send

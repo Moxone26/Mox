@@ -31,7 +31,7 @@
                     <th>Supprimer</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="table-body">
                 <?php foreach ($makings as $making) : ?>
                     <tr data-rawId="<?= htmlspecialchars($making["Id"]) ?>">
                         <td><?= htmlspecialchars($making["Id"]) ?></td>

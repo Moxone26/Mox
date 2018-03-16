@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded', function(){
     var deleteMakings;
 
     deleteMakings = new DeleteMakings();
-    deleteMakings.onClickGetDeleteMakingId(); // Ajoute un gestionnaire d'evenement au clic sur chaque bouton supprimé et au clic renvoi l'id correspondante
+    deleteMakings.onClickDeleteMaking(); // Ajoute un gestionnaire d'evenement au clic sur chaque bouton supprimé et au clic renvoi l'id correspondante
 
 });

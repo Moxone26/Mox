@@ -244,9 +244,95 @@ AddMakings.prototype.sendData = function(callback){
 
 AddMakings.prototype.onAddMakingPhpGetAnswer = function(answer)
 {
-    // A renseigner !!!! ------------------------------------------- >
-    alert(answer);
+    // Recuperation de la réponse serveur depuis "deleMaking.php", parse du Json
+    answer = JSON.parse(answer);
+
+    // Affichage du nom créer dans la tr "alert"
+    document.getElementById("alert").innerHTML =  "<td colspan='9'> Projet '" + answer.Name + "' ajouté</td>";
+
+    // Création de la nouvelle ligne "tr" à inserer
+    var tBody = document.getElementById("table-body");
+    var firstChild = tBody.firstChild;
+    var newTr = document.createElement("tr");
+    newTr.setAttribute("data-rawId", answer.Id);
+
+    // Creation de la premiere cellule Id dans la nouvelle ligne
+    var td = document.createElement("td");
+    td.appendChild(document.createTextNode(answer.Id));
+    newTr.appendChild(td);
+
+    // Creation de la cellule Nom
+    var td = document.createElement("td");
+    td.appendChild(document.createTextNode(answer.Name));
+    newTr.appendChild(td);
+
+    // Creation de la cellule Created (date de creation)
+    var td = document.createElement("td");
+    td.appendChild(document.createTextNode(answer.Created));
+    newTr.appendChild(td);
+
+    // Creation de la cellule Nom
+    var td = document.createElement("td");
+    td.appendChild(document.createTextNode(answer.Description));
+    newTr.appendChild(td);
+
+    //Creation de la cellule Link
+    var td = document.createElement("td");
+    var a = document.createElement("a");
+    a.setAttribute("href", answer.Link);
+    a.appendChild(document.createTextNode(answer.Link));
+    td.appendChild(a);
+    newTr.appendChild(td);
+
+    // Creation de la cellule Languages
+    var td = document.createElement("td");
+    td.appendChild(document.createTextNode(answer.Languages));
+    newTr.appendChild(td);
+
+    // Creation de la cellule Image
+    var td = document.createElement("td");
+    var img = document.createElement("img");
+    img.setAttribute("class", "summary-img");
+    img.setAttribute("alt", answer.Image);
+    img.setAttribute("src", "./img/" + answer.Image);
+    td.appendChild(img);
+    newTr.appendChild(td);
+
+
+    // Creation de la cellule Modifier
+    var td = document.createElement("td");
+    var button = document.createElement("button");
+    button.setAttribute("class", "editMaking summary-button");
+    button.setAttribute("data-id", answer.Id);
+    var i = document.createElement("i");
+    i.setAttribute("class", "fas fa-edit");
+    button.appendChild(i);
+    td.appendChild(button);
+    newTr.appendChild(td);
+
+    // Creation de la cellule Supprimer
+    var td = document.createElement("td");
+    var button = document.createElement("button");
+    button.setAttribute("class", "deleteMaking summary-button");
+    button.setAttribute("data-id", answer.Id);
+    var i = document.createElement("i");
+    i.setAttribute("class", "fas fa-trash-alt");
+    button.appendChild(i);
+    td.appendChild(button);
+    newTr.appendChild(td);
+
+
+    // Insertion de la nouvelle ligne newTr contenant toutes les cellules td en haut du tableau (donc avant le premier enfant de tbody)
+    tBody.insertBefore(newTr, firstChild);
+
+    // Ajout des écouteurs d'événements sur les bouton Modifier et Supprimer
+    var selector = document.querySelector(".deleteMaking[data-id='" + answer.Id + "']");
+    selector.addEventListener("click", function(){
+       console.log("ok event")
+    });
+    console.log(selector);
 };
+
 
 AddMakings.prototype.resetAndCloseForm = function()
 {

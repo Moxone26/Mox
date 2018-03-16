@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c7227aca-fced-46d9-bd1f-d76fb3048954" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/deleteMaking.php" afterPath="$PROJECT_DIR$/src/deleteMaking.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MakingsModel.php" afterPath="$PROJECT_DIR$/src/MakingsModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/addMaking.php" afterPath="$PROJECT_DIR$/src/addMaking.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/admin.js" afterPath="$PROJECT_DIR$/www/js/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/class/AddMakings.class.js" afterPath="$PROJECT_DIR$/www/js/class/AddMakings.class.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/class/DeleteMakings.class.js" afterPath="$PROJECT_DIR$/www/js/class/DeleteMakings.class.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/views/admin.phtml" afterPath="$PROJECT_DIR$/www/views/admin.phtml" />
     </list>
@@ -34,16 +37,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MakingsModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MakingsModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+            <state relative-caret-position="278">
+              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
               <folding>
-                <marker date="1520896477118" expanded="true" signature="367:437" placeholder="Select * FRO... makings" />
-                <marker date="1520896477118" expanded="true" signature="570:642" placeholder="INSERT INTO Makings... " />
-                <marker date="1520896477118" expanded="true" signature="570:724" placeholder="INSERT INTO Makings... " />
-                <marker date="1520896477118" expanded="true" signature="1157:1221" placeholder="DELETE FROM " />
+                <marker date="1521221148160" expanded="true" signature="367:437" placeholder="Select * FRO... makings" />
+                <marker date="1521221148160" expanded="true" signature="574:656" placeholder="SELECT * FRO... makings" />
+                <marker date="1521221148160" expanded="true" signature="574:660" placeholder="SELECT MAX(I... makings" />
+                <marker date="1521221148160" expanded="true" signature="574:701" placeholder="SELECT MAX(I... makings" />
+                <marker date="1521221148160" expanded="true" signature="790:862" placeholder="INSERT INTO Makings... " />
+                <marker date="1521221148160" expanded="true" signature="790:944" placeholder="INSERT INTO Makings... " />
+                <marker date="1521221148160" expanded="true" signature="1377:1441" placeholder="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -52,7 +68,7 @@
       <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="734">
+            <state relative-caret-position="768">
               <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
               <folding />
             </state>
@@ -62,8 +78,8 @@
       <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="112" selection-start-line="11" selection-start-column="112" selection-end-line="11" selection-end-column="112" />
+            <state relative-caret-position="240">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -72,18 +88,8 @@
       <file leaf-file-name="admin.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/views/admin.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="35" column="76" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="125" column="16" selection-start-line="125" selection-start-column="16" selection-end-line="125" selection-end-column="16" />
+              <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -92,28 +98,8 @@
       <file leaf-file-name="AddMakings.class.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/class/AddMakings.class.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="230" column="3" selection-start-line="230" selection-start-column="0" selection-end-line="236" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteMakings.class.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/js/class/DeleteMakings.class.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="715">
-              <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deleteMaking.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/deleteMaking.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="600">
+              <caret line="330" column="30" selection-start-line="330" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,18 +108,38 @@
       <file leaf-file-name="addMaking.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/addMaking.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state relative-caret-position="696">
+              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/views/index.phtml">
+      <file leaf-file-name="DeleteMakings.class.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/class/DeleteMakings.class.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="312">
+              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deleteMaking.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/deleteMaking.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -179,16 +185,16 @@
         <option value="$PROJECT_DIR$/www/admin.php" />
         <option value="$PROJECT_DIR$/www/js/class/Xhr.class.js" />
         <option value="$PROJECT_DIR$/src/addMaking.php.phtml" />
-        <option value="$PROJECT_DIR$/src/addMaking.php" />
         <option value="$PROJECT_DIR$/www/views/index.phtml" />
         <option value="$PROJECT_DIR$/src/Database.php" />
-        <option value="$PROJECT_DIR$/www/js/admin.js" />
-        <option value="$PROJECT_DIR$/www/js/class/AddMakings.class.js" />
-        <option value="$PROJECT_DIR$/src/MakingsModel.php" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/src/deleteMaking.php" />
+        <option value="$PROJECT_DIR$/src/MakingsModel.php" />
+        <option value="$PROJECT_DIR$/src/addMaking.php" />
         <option value="$PROJECT_DIR$/www/views/admin.phtml" />
+        <option value="$PROJECT_DIR$/www/js/admin.js" />
         <option value="$PROJECT_DIR$/www/js/class/DeleteMakings.class.js" />
+        <option value="$PROJECT_DIR$/www/js/class/AddMakings.class.js" />
       </list>
     </option>
   </component>
@@ -202,9 +208,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1934" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -277,6 +283,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="mox">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -392,31 +412,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="mox">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dav/css/style.css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fr" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="JavaScriptPreferStrict" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="jsx.switch.disabled" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -462,6 +469,7 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="$PROJECT_DIR$/../../fr" Dictionaries="0" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -495,18 +503,20 @@
       <workItem from="1520329609948" duration="12380000" />
       <workItem from="1520415852621" duration="12224000" />
       <workItem from="1520860370491" duration="13130000" />
-      <workItem from="1521022810202" duration="18064000" />
+      <workItem from="1521022810202" duration="18662000" />
+      <workItem from="1521208048309" duration="13263000" />
+      <workItem from="1521224075816" duration="5261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224266000" />
+    <option name="totallyTimeSpent" value="243388000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1934" height="1047" extended-state="0" />
+    <frame x="-8" y="0" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12721585" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12708333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -713,7 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,14 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="156" selection-start-line="16" selection-start-column="156" selection-end-line="16" selection-end-column="156" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/views/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -754,17 +755,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/class/DeleteMakings.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deleteMaking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/addMaking.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        <state relative-caret-position="696">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/class/AddMakings.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="330" column="30" selection-start-line="330" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/views/admin.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
+        <state relative-caret-position="768">
           <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
           <folding />
         </state>
@@ -772,61 +821,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MakingsModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        <state relative-caret-position="278">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
           <folding>
-            <marker date="1520896477118" expanded="true" signature="367:437" placeholder="Select * FRO... makings" />
-            <marker date="1520896477118" expanded="true" signature="570:642" placeholder="INSERT INTO Makings... " />
-            <marker date="1520896477118" expanded="true" signature="570:724" placeholder="INSERT INTO Makings... " />
-            <marker date="1520896477118" expanded="true" signature="1157:1221" placeholder="DELETE FROM " />
+            <marker date="1521221148160" expanded="true" signature="367:437" placeholder="Select * FRO... makings" />
+            <marker date="1521221148160" expanded="true" signature="574:656" placeholder="SELECT * FRO... makings" />
+            <marker date="1521221148160" expanded="true" signature="574:660" placeholder="SELECT MAX(I... makings" />
+            <marker date="1521221148160" expanded="true" signature="574:701" placeholder="SELECT MAX(I... makings" />
+            <marker date="1521221148160" expanded="true" signature="790:862" placeholder="INSERT INTO Makings... " />
+            <marker date="1521221148160" expanded="true" signature="790:944" placeholder="INSERT INTO Makings... " />
+            <marker date="1521221148160" expanded="true" signature="1377:1441" placeholder="DELETE FROM " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="112" selection-start-line="11" selection-start-column="112" selection-end-line="11" selection-end-column="112" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="125" column="16" selection-start-line="125" selection-start-column="16" selection-end-line="125" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/views/admin.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="35" column="76" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/deleteMaking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/class/AddMakings.class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="230" column="3" selection-start-line="230" selection-start-column="0" selection-end-line="236" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/class/DeleteMakings.class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
+        <state relative-caret-position="168">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding />
         </state>
       </provider>
