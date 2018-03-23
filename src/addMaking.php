@@ -28,7 +28,12 @@ try
         // Recupération du dernier enregistrement (id le plus élevé)
         $last = $makingsModel->getLastMakings();
         $last = $last[0];
-        
+
+        // Redirection du fichier image téléchargé dans le dossier /img
+        $uploaded_img_dir = '../www/img';
+        $name = $_FILES['image']['name'];
+        move_uploaded_file($_FILES['image']['tmp_name'], "$uploaded_img_dir/$name");
+
         // On renvoi le titre du Post ajouter
         echo json_encode($last);
     }
