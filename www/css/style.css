@@ -127,38 +127,16 @@ h3 {
     padding: 5px 0;
 }
 
-.stone {
-    width: 200px;
+.introduction {
+    font-family: Static, sans-serif;
+    color: #FCF9F2;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 1px #000000;
     position: absolute;
     top: 50%;
-    left: 39%;
-}
-
-.stone {
-    animation-duration: 8s;
-    -webkit-animation-name: fly;
-    -moz-animation-name: fly;
-    -o-animation-name: fly;
-    animation-name: fly;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-delay: 0.2s;
-
-}
-
-@keyframes fly {
-    0% {
-         transform: scale(1);
-    }
-
-    50% {
-        transform: translate(0px, -20px);
-        opacity: 0.8;
-    }
-
-    100% {
-        transform: scale(0.9);
-    }
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* FIN ** - Header - Menu ** FIN */
